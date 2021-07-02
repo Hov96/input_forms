@@ -1,193 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
-	background-image: linear-gradient(to right, rgb(23, 161, 161), rgb(22, 105, 105), rgb(23, 161, 161));
+    background-image: linear-gradient(to right, rgb(23, 161, 161), rgb(22, 105, 105), rgb(23, 161, 161));
 }
 
 .header {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px 50px;
-	border-bottom: 1px solid white;
- 	background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    border-bottom: 1px solid white;
+    background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
 }
 
 .logo {
-	box-sizing: border-box;
-	width: 50px;
-	height: 50px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
 }
 
 #login {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 .sign button {
-	background-image: linear-gradient(to right, rgb(126, 255, 255), rgb(0, 248, 248), rgb(126, 255, 255));
-	border: none;
-	cursor: pointer;
-	padding: 8px 18px;
-	letter-spacing: 1px;
-	font-size: 18px;
-	border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(126, 255, 255), rgb(0, 248, 248), rgb(126, 255, 255));
+    border: none;
+    cursor: pointer;
+    padding: 8px 18px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 20px;
 }
-
-
 
 
 /* Form */
 
 .signup {
-	width: 28%;
-	height: 100%;
-	margin: 20px auto 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: white;
-	font-size: 18px;
-	border-radius: 10px;
-
-
+    width: 33%;
+    height: 100%;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
-.signup h2, .login_form h2 {
-	font-size: 24px;
-	color: rgb(0, 190, 190);
-	margin: 20px 0;
-	text-align: center;
+.signup h2,
+.login_form h2 {
+    font-size: 24px;
+    color: rgb(0, 190, 190);
+    margin: 20px 0;
+    text-align: center;
 }
 
-.signup input, .login_form input {
-	margin: 0 0 20px 74px;
-	width: 300px;
-	font-size: 18px;
-	padding: 8px 10px;
-	border-radius: 5px;
-	border: 1px solid rgb(0, 248, 248);
+.signup input,
+.login_form input {
+    margin: 0 0 20px 74px;
+    width: 300px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 248, 248);
 }
 
 input::placeholder {
-	color: silver;
+    color: silver;
 }
 
 input[type=text]:focus {
-	border: 1px solid rgb(0, 190, 190);
- }
-
- .signup button, .login_form button {
-	width: 300px;
-	background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-	padding: 8px 0;
-	font-size: 18px;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	margin: 0 auto 30px;
+    border: 1px solid rgb(0, 190, 190);
 }
 
-.signup p, .login_form p {
-	text-align: center;
-	color: silver;
-	font-size: 12px;
-	display: none;
-	margin-top: -10px;
+.signup button,
+.login_form button {
+    width: 300px;
+    background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 0 auto 30px;
 }
 
-
+.signup p,
+.login_form p {
+    text-align: center;
+    color: silver;
+    font-size: 12px;
+    display: none;
+    margin-top: -10px;
+}
 
 
 /* Login Form */
 
 .login_form {
-	width: 26%;
-	height: 100%;
-	margin: 100px auto 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: white;
-	font-size: 18px;
-	border-radius: 10px;
-
-
-	display: none;
+    width: 30%;
+    height: 100%;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none;
 }
 
 .login_form button {
-	margin: 0 0 30px 56px;
+    margin: 0 0 30px 56px;
 }
 
 .login_form h2 {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .login_form input {
-	margin: 0 0 20px 56px;
+    margin: 0 0 20px 56px;
 }
-
-
 
 
 /* Registered */
 
 .user_info {
-	background-color: white;
-	width: 26%;
-	height: 100%;
-	margin: 100px auto 0;
-	padding: 40px;
-	font-size: 18px;
-	border-radius: 10px;
-
-
-	display: none;
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    margin: 100px auto 0;
+    padding: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none;
 }
 
 .user_info h2 {
-	font-size: 28px;
-	text-align: center;
-	margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .user_info p {
-	margin-bottom: 20px;
-	border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+    border-bottom: 1px solid silver;
 }
 
 .buttons {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .buttons button {
-	border: none;
-	cursor: pointer;
-	font-size: 18px;
-	padding: 8px 18px;
-	background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
-	border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 18px;
+    background-image: linear-gradient(to right, rgb(0, 248, 248), rgb(0, 190, 190), rgb(0, 248, 248));
+    border-radius: 5px;
 }
 
-
-
-
 label {
-	color: red;
+    color: red;
 }
