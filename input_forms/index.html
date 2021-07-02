@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png" alt="" width="50px">
+		</div>
+		<div class="sign">
+			<button id="login">Login</button>
+			<button id="reg">Registration</button>
+		</div>
+	</header>
+
+	<div class="signup" id="signup_block">
+		<h2>SignUp Form</h2>
+		<label id="label_name"><input type="text" placeholder="Name" id="name"></label>
+		<p id="name_error_text"></p>
+
+		<label id="label_surname"><input type="text" placeholder="Surname" id="surname"></label>
+		<p id="surname_error_text"></p>
+
+		<label id="label_mail"><input type="text" placeholder="Mail" id="mail"></label>
+		<p id="mail_error_text"></p>
+
+		<label id="label_username"><input type="text" placeholder="Username" id="username"></label>
+		<p id="username_error_text"></p>
+
+		<label id="label_password"><input type="password" placeholder="Password" id="password"></label>
+		<p id="password_error_text"></p>
+
+		<label id="label_cPass"><input type="password" placeholder="Confirm Password" id="cPass"></label>
+		<p id="cPass_error_text"></p>
+
+		<button id="signup" onclick="signupButton()">signup</button>
+	</div>
+
+	<div class="login_form" id="login_block">
+		<h2>Login Form</h2>
+		<input type="text" placeholder="Mail">
+		<input type="password" placeholder="Password">
+		<button id="log_in">LOGIN</button>
+	</div>
+
+	<div class="user_info">
+		<h2>The user has registered!</h2>
+		<p id="username_info">username</p>
+		<p id="email_info">email</p>
+		<p id="password_info">password</p>
+		<div class="buttons">
+			<button id="change_password">Change The Password</button>
+			<button id="logout">Log Out</button>
+		</div>
+	</div>
+
+
+
+	<script src="./js/das_30.js"></script>
+</body>
+
+</html>
